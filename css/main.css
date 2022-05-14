@@ -8,6 +8,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  padding: 0px;
 }
 
 .gray-background {
@@ -101,8 +102,9 @@ header ul li {
 /*Main area, third section */
 
 .flex-section-2 > img {
-  max-width: 400px;
-  max-height: 500px;
+  max-width: 100%;
+  height: auto;
+  width: 400px;
   mix-blend-mode: multiply;
   margin-left: 15%;
 }
@@ -287,4 +289,37 @@ footer > span > a {
 footer > span:nth-of-type(2) {
   margin-left: auto;
   margin-right: 150px;
+}
+
+/*Responsive */
+@media screen and (max-width: 800px) {
+  .flex-section-2 > img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex-section-2 > img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .flex-section-2 > img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .flex-section-2 > img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
 }
