@@ -1,0 +1,290 @@
+:root {
+  --main-color: #eee;
+  --secondary-color: #fff;
+  --main-text-color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.gray-background {
+  background-color: var(--main-color, --secondary-color);
+}
+
+.flex-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex-section-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: no wrap;
+}
+
+.skill-bar {
+  width: 70%;
+  background-color: var(--secondary-color, white);
+  margin-bottom: 20px;
+}
+
+/*Heading */
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header ul {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+}
+
+header ul li {
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+/*Main area, first section */
+
+.flex-section > h1 {
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.flex-section > h1 > span {
+  color: blue;
+}
+
+.flex-section > article > p {
+  width: 70%;
+  margin: 0px auto 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+/*Main area, second section */
+
+.flex-section > div > h3 {
+  margin-top: -2px;
+  text-transform: capitalize;
+}
+
+.flex-section > div > p {
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.flex-section > div > img {
+  max-width: 80px;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+/*Main area, third section */
+
+.flex-section-2 > img {
+  max-width: 400px;
+  max-height: 500px;
+  mix-blend-mode: multiply;
+  margin-left: 15%;
+}
+
+.flex-section-2 > div > h2 {
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.flex-section-2 > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.flex-section-2 > div > article > p {
+  width: 60%;
+  font-size: 15px;
+  text-align: justify;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/*Main area, fourth section */
+
+section:nth-of-type(4) > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--secondary-color, white);
+  width: 250px;
+  height: 110px;
+  margin-top: 40px;
+  margin-right: 15px;
+  position: relative;
+  line-height: 3;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(4) > div:nth-child(1)::before {
+  content: "10";
+  position: absolute;
+  font-size: 50px;
+  line-height: 0;
+  top: 44px;
+  left: 94px;
+  font-weight: bold;
+}
+
+section:nth-of-type(4) > div:nth-child(1) {
+  background-color: #ef1616e8;
+}
+
+section:nth-of-type(4) > div:nth-child(2)::before {
+  content: "70";
+  position: absolute;
+  font-size: 50px;
+  line-height: 0;
+  top: 44px;
+  left: 94px;
+  font-weight: bold;
+}
+
+section:nth-of-type(4) > div:nth-child(2) {
+  background-color: #3f51b5ed;
+}
+
+section:nth-of-type(4) > div:nth-child(3)::before {
+  content: "120";
+  position: absolute;
+  font-size: 50px;
+  line-height: 0;
+  top: 44px;
+  left: 80px;
+  font-weight: bold;
+}
+
+section:nth-of-type(4) > div:nth-child(3) {
+  background-color: #148519e0;
+}
+
+/*Main area, fifth section */
+
+.flex-section > h2:nth-child(1) {
+  width: 100%;
+  height: 20px;
+  font-weight: bolder;
+  margin: 40px;
+}
+
+.flex-section > .skill-bar > div {
+  padding: 10px;
+  text-align: right;
+  color: var(--secondary-color, white);
+  background-color: #2196f3;
+  position: relative;
+}
+
+.html::before {
+  content: "HTML";
+  position: absolute;
+  color: var(--main-text-color, black);
+  left: -49px;
+  font-weight: bold;
+}
+
+.html {
+  width: 60%;
+}
+
+.css::before {
+  content: "CSS";
+  position: absolute;
+  color: var(--main-text-color, black);
+  left: -49px;
+  font-weight: bold;
+}
+
+.css {
+  width: 70%;
+}
+
+.javascript::before {
+  content: "JavaScript";
+  position: absolute;
+  color: var(--main-text-color, black);
+  left: -74px;
+  font-weight: bold;
+}
+
+.javascript {
+  width: 80%;
+}
+
+.typescript::before {
+  content: "TypeScript";
+  position: absolute;
+  color: var(--main-text-color, black);
+  left: -80px;
+  font-weight: bold;
+}
+
+.typescript {
+  width: 60%;
+}
+
+.react::before {
+  content: "React";
+  position: absolute;
+  color: var(--main-text-color, black);
+  left: -49px;
+  font-weight: bold;
+}
+
+.react {
+  width: 90%;
+}
+
+/*Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #0c0c0ce8;
+  color: white;
+  font-size: 13px;
+}
+
+footer > span:first-child {
+  margin-left: 150px;
+}
+
+footer > span > a {
+  text-decoration: none;
+  color: #02e2ff;
+}
+
+footer > span:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: 150px;
+}
